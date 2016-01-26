@@ -166,7 +166,5 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       $filename = ".jpg";
       $path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
       imagejpeg($img,$path);
-      header("Location: http://www.domain.com/tmpbill/BeLikeBill_" . $billpath . "_" . $filename);
-      //imagedestroy($img);
-
+      imagejpeg($img);
 ?> 
