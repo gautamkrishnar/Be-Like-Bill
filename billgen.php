@@ -3,9 +3,6 @@
  * Created with <3 By Gautam Krishna R
  * www.github.com/gautamkrishnar
  */
-header('Content-type: image/jpeg');
-$name = filter_input(INPUT_GET, 'name');
-$sex = filter_input(INPUT_GET, 'sex');
 
 // Result array
 $memlist=array("This is Bill.\n\n"
@@ -141,14 +138,17 @@ $ran_mem=array_rand($memlist,1);
 $text = $memlist[$ran_mem];
 
 // if user inputs his name
-if($name)
+if(isset($name))
 {
 $name=ucfirst($name);
 $text = preg_replace('/\bBill\b/', $name, $text);
 $text = preg_replace('/\bbill\b/', $name, $text);
 }
+//Just fot preventing a notice when $sesx is not found when the billgen.php is called via browser for debugging purposes
+if (!isset($sex)){$sex='m';}
 
-// if bill is female
+
+// if bill is female}
 if($sex=='f')
 {
 $text = preg_replace('/\bhis\b/', 'her', $text);
@@ -166,5 +166,5 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       $filename = ".jpg";
       $path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
       imagejpeg($img,$path);
-      imagejpeg($img);
+      echo $path;
 ?> 

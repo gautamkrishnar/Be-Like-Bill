@@ -15,10 +15,15 @@
         if(filter_input(INPUT_POST, 'name')){
         $name = filter_input(INPUT_POST, 'name');
         $sex = filter_input(INPUT_POST, 'sex');
-        echo '<img src="billgen.php?name='.$name.'&sex='.$sex.'" class="billimg" />';
+        // Echoing the image url to src tag of img
+        echo '<img src=".';
+        include 'billgen.php';
+        echo '" class="billimg"/>';
         }
  else {
-     echo '<img src="billgen.php" class="billimg"/>';
+     echo '<img src="';
+     include 'billgen.php';
+     echo '" class="billimg"/>';
  }
          ?>
         <br/><br/>
