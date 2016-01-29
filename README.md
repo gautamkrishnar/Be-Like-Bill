@@ -3,7 +3,7 @@ Be like Bill is an online platform that allows you to create your own "Be like B
 
 ![Be like bill](http://i.imgur.com/1cXQOFT.jpg)
 
-Just go to: http://belikebill.azurewebsites.net/ and create random meme with your n. If you want to use your own text, use the API.
+Just go to: http://belikebill.azurewebsites.net/ and create random meme with your name. If you want to use your own text, use the API.
 
 #### Features
 * Create be like bill memes with your name
