@@ -61,3 +61,7 @@
   text-decoration: none;
   margin-top: 15px;
 }
+
+   @media (max-width:600px) {
+      .billimg { width:100%; } 
+    }
