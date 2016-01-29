@@ -18,20 +18,20 @@ The API script is located at:  http://belikebill.azurewebsites.net/billgen-API.p
 If you need to include a random meme to your website just use:
 
 ```html
-<img src=http://belikebill.azurewebsites.net/billgen-API.php?default=1" />
+<img src="http://belikebill.azurewebsites.net/billgen-API.php?default=1" />
 ```
 
 If you need to include a random meme with your name to your website just use:
 
 
 ```html
-<img src=http://belikebill.azurewebsites.net/billgen-API.php?default=1&name=yourname" />
+<img src="http://belikebill.azurewebsites.net/billgen-API.php?default=1&name=yourname" />
 ```
 
 If you need to use your own Be like Bill meme with your oen customized text just use the following:
 
 ```html
-<img src=http://belikebill.azurewebsites.net/billgen-API.php?text=This is Bill%0D%0ABe Like Bill" />
+<img src="http://belikebill.azurewebsites.net/billgen-API.php?text=This is Bill%0D%0ABe Like Bill" />
 
 ```
 
