@@ -41,7 +41,7 @@ You must use `%0D%0A` for newine.
 ##### List of options
 * **default** - Set this to 1 if you need to use the predefined memes
 * **name**    - Set this to your name if you need to use your name on a predefined meme. Works only if default is set to 1 
-* **text **   - Use your own text in the meme.
+* **text**   - Use your own text in the meme.
 
 ### Bugs
 If you are experiencing any bugs feel free to open  a new issue [here](https://github.com/gautamkrishnar/Be-Like-Bill/issues/new) 
