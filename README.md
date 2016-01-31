@@ -1,4 +1,6 @@
-# Be Like Bill
+# Be Like Bill 
+[![Build Status](https://travis-ci.org/gautamkrishnar/Be-Like-Bill.svg?branch=master)](https://travis-ci.org/gautamkrishnar/Be-Like-Bill)
+
 Be like Bill is an online platform that allows you to create your own "Be like Bill" Memes. Its really simple and easy to use. It also has an API to create and use Be like Bill memes on your website.
 
 ![Be like bill](http://i.imgur.com/1cXQOFT.jpg)
