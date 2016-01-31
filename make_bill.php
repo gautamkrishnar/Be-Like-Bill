@@ -22,7 +22,7 @@
  }
          ?>
         <br/><br/>
-        Right click the image to and select the "save image as" option to save.
+        Right click the image and select the "save image as" option to save.
         <br/><br/><b>
         Created with <img src="http://www.clker.com/cliparts/V/a/r/B/D/o/love-md.png" width="15px" height="inherit"/> 
         By <a href="http://github.com/gautamkrishnar/" target="_blank">Gautam krishna R.</a><br/>
