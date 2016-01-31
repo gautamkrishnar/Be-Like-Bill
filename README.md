@@ -52,6 +52,7 @@ Feel free to make any changes. We need some more memes to make Be like Bill a lo
 ###### TODO
 - [ ] Ability to use more characters other than Bill, like Della
 - [ ] Add more memes
+- [ ] Add social media sharing
 
 ### Contributors
 Your name will be listed here....
