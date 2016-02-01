@@ -168,3 +168,21 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       imagejpeg($img,$path);
       echo $path;
 ?> 
+<?
+
+/*
+ * Function to clear all old generated images on the server to free up disk space
+ * Arg given as $deltime is the maximum amount of time that an image can stay in the server(in sec)
+ * Whenever the function is called the older images will be deleted
+ */
+function destroybill($deltime)
+{   
+      $dir = "./tmpbill/";
+      foreach (glob($dir."*.jpg") as $billfile) {
+          if (filemtime($billfile) < time() - $deltime) {
+              unlink($billfile);   
+          }
+          }
+          return;
+}
+?>
