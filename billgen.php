@@ -4,6 +4,28 @@
  * www.github.com/gautamkrishnar
  */
 
+/*
+ * Clearing all old generated images on the server to free up disk space, based on time.
+ * Value given as $deltime is the time. The image which is older than $deltime will get deleted
+ * Current value = 1 hour
+ * Modify the value of $deltime to ur preference
+ */
+
+// $deltime is in seconds. 3600s=1hr
+      $deltime=3600;
+
+      $dir = "./tmpbill/";
+      foreach (glob($dir."*.jpg") as $billfile) {
+          if (filemtime($billfile) < time() - $deltime) {
+              unlink($billfile);
+          }
+          }
+
+          
+/*
+ * Bill Generation module
+ */
+          
 // Result array
 $memlist=array("This is Bill.\n\n"
     . "Bill has an I-pad to take photos\n"
@@ -168,21 +190,3 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       imagejpeg($img,$path);
       echo $path;
 ?> 
-<?
-
-/*
- * Function to clear all old generated images on the server to free up disk space
- * Arg given as $deltime is the maximum amount of time that an image can stay in the server(in sec)
- * Whenever the function is called the older images will be deleted
- */
-function destroybill($deltime)
-{   
-      $dir = "./tmpbill/";
-      foreach (glob($dir."*.jpg") as $billfile) {
-          if (filemtime($billfile) < time() - $deltime) {
-              unlink($billfile);   
-          }
-          }
-          return;
-}
-?>
