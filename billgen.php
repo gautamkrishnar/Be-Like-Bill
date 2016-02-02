@@ -7,7 +7,7 @@
 /*
  * Clearing all old generated images on the server to free up disk space, based on time.
  * Value given as $deltime is the time. The image which is older than $deltime will get deleted
- * Current value = 1 hour
+ * Current value = 1 hour.
  * Modify the value of $deltime to your preference
  */
 
