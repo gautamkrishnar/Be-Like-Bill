@@ -7,7 +7,7 @@
 /*
  * Clearing all old generated images on the server to free up disk space, based on time.
  * Value given as $deltime is the time. The image which is older than $deltime will get deleted
- * Current value = 1 hour.
+ * Current value = 1 hour
  * Modify the value of $deltime to your preference
  */
 
@@ -170,7 +170,7 @@ $text = preg_replace('/\bbill\b/', $name, $text);
 if (!isset($sex)){$sex='m';}
 
 
-// if bill is female}
+// if bill is female} then changing the sentences by replacing the words
 if($sex=='f')
 {
 $text = preg_replace('/\bhis\b/', 'her', $text);
