@@ -2,6 +2,7 @@
 /*
  * Created with <3 By Gautam Krishna R
  * www.github.com/gautamkrishnar
+ * Be like bill API
  */
 header('Content-type: image/jpeg');
 $text="Use:\nbillgen-API.php?default=1 :- To generate meme from \ndefault text.\n\n"
@@ -52,4 +53,4 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
       imagejpeg($img);
       imagedestroy($img);
-?> 
+?>
