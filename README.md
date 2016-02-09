@@ -54,7 +54,7 @@ Feel free to make any changes. We need some more memes to make Be like Bill a lo
 - [ ] Add more memes
 
 ### Contributors
-Your name will be listed here....
+* [Bhawani Garg](https://github.com/BhawaniGarg):[bug #2](https://github.com/gautamkrishnar/Be-Like-Bill/issues/2)
 
 ### Spread the word
 If you liked this project, please dont forget to star this repo and spread the word.
