@@ -162,6 +162,11 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       $clr = imagecolorallocate($img, 0, 0, 0);
       $font_path = 'arialbd.ttf';
       imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
-      imagejpeg($img);
-      imagedestroy($img);
+      $billpath = rand(1,100000);
+      $filename = ".jpg";
+      $path = "/home2/USERNAME/public_html/uploads/BeLikeBill_" . $billpath . "_" . $filename;
+      imagejpeg($img,$path);
+      header("Location: http://www.domain.com/uploads/BeLikeBill_" . $billpath . "_" . $filename);
+      //imagedestroy($img);
+
 ?> 
