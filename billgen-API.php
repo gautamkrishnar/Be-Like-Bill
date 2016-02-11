@@ -6,10 +6,10 @@
  */
 header('Content-type: image/jpeg');
 $text="Use:\nbillgen-API.php?default=1 :- To generate meme from \ndefault text.\n\n"
-        . "billgen-API.php?default=1&name=sanu&sex=f :- specifies \nthe name\n"
+        . "billgen-API.php?default=1&name=anu&sex=f :- specifies \nthe name\n"
         . "and sex. Generate the input based default memes.\n\n"
         . "billgen-API.php?text=your text here :- Generate meme \nusing"
-        . "your own text. use '%0D%0A' for newline. \n"
+        . " your own text. use '%0D%0A' for newline. \n"
         . "eg:billgen-API.php?text=Bill is smart%0D%0ABe like Bill";
 $def = filter_input(INPUT_GET, 'default');
 if($def==1)
