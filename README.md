@@ -47,7 +47,7 @@ You must use `%0D%0A` for newine.
 If you are experiencing any bugs feel free to open  a new issue [here](https://github.com/gautamkrishnar/Be-Like-Bill/issues/new) 
 
 ### Contributing
-Feel free to make any changes. We need some more memes to make Be like Bill a lot more awesome. Edit the **billgen-API.php** and **billgen.php** to add more memes. Submit a new pull request with your changes.
+Feel free to make any changes. We need some more memes to make Be like Bill a lot more awesome. Edit the **memelist.php** to add more memes. Submit a new pull request with your changes.
 
 ###### TODO
 - [ ] Ability to use more characters other than Bill, like Della
