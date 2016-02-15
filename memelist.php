@@ -125,6 +125,12 @@ $memlist=array("This is Bill.\n\n"
     . "Bill calls his mother and tells her\n"
     . "he loves her.\n\n"
     . "Be like Bill.\n"
-    . "Bill cares."
+    . "Bill cares.",
+    "This is Bill.\n\n"
+    . "Bill says\n"
+    . "FRIENDS\n"
+    . "is not a good TV Show.\n\n"
+    . "Bill is IDIOT\n"
+    . "Don't Be like Bill"
     );
 ?>
