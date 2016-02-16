@@ -130,7 +130,13 @@ $memlist=array("This is Bill.\n\n"
     . "Bill says\n"
     . "FRIENDS\n"
     . "is not a good TV Show.\n\n"
-    . "Bill is IDIOT\n"
-    . "Don't Be like Bill"
+    . "Bill is IDIOT.\n"
+    . "Don't Be like Bill",
+    "This is Bill.\n\n"
+    . "Bill knows that online games \n"
+    . "cannot be paused.\n"
+    . "So Bill dont't play it.\n\n"
+    . "Bill is smart.\n"
+    . "Be like Bill."
     );
 ?>
