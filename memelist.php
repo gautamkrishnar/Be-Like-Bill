@@ -137,6 +137,11 @@ $memlist=array("This is Bill.\n\n"
     . "cannot be paused.\n"
     . "So Bill dont't play it.\n\n"
     . "Bill is smart.\n"
-    . "Be like Bill."
+    . "Be like Bill.",
+    "This is Bill.\n\n"
+    . "Bill does not play candy crush\n"
+    . "Bill has his own life\n\n"
+    . "Bill is smart.\n"
+    . "Be like Bill"
     );
 ?>
