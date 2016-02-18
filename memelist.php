@@ -142,6 +142,13 @@ $memlist=array("This is Bill.\n\n"
     . "Bill does not play candy crush\n"
     . "Bill has his own life\n\n"
     . "Bill is smart.\n"
-    . "Be like Bill"
+    . "Be like Bill.",
+    "This is bill.\n\n"
+    . "Bill has the guts to say things\n"
+    . "to the people's face\n"
+    . "instead of writing clues\n"
+    . "on Facebook.\n\n"
+    . "Bill is brave.\n"
+    . "Be like Bill."
     );
 ?>
