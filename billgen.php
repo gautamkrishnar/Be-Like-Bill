@@ -164,9 +164,9 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
       $billpath = rand(1,100000);
       $filename = ".jpg";
-      $path = "/home2/USERNAME/public_html/uploads/BeLikeBill_" . $billpath . "_" . $filename;
+      $path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
       imagejpeg($img,$path);
-      header("Location: http://www.domain.com/uploads/BeLikeBill_" . $billpath . "_" . $filename);
+      header("Location: http://www.domain.com/tmpbill/BeLikeBill_" . $billpath . "_" . $filename);
       //imagedestroy($img);
 
 ?> 
