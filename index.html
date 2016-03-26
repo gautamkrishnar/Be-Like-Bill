@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Be-like-bill : Be Like Bill meme generator and API created with PHP, Using this API you can include customized version of &quot;Be like Bill&quot; meme on your website.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Be-like-bill</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gautamkrishnar/Be-Like-Bill">View on GitHub</a>
+
+          <h1 id="project_title">Be-like-bill</h1>
+          <h2 id="project_tagline">Be Like Bill meme generator and API created with PHP, Using this API you can include customized version of &quot;Be like Bill&quot; meme on your website.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/gautamkrishnar/Be-Like-Bill/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/gautamkrishnar/Be-Like-Bill/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="be-like-bill---" class="anchor" href="#be-like-bill---" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Be Like Bill <a href="https://travis-ci.org/gautamkrishnar/Be-Like-Bill"><img src="https://travis-ci.org/gautamkrishnar/Be-Like-Bill.svg?branch=master" alt="Build Status"></a> <a href="http://www.codetriage.com/gautamkrishnar/be-like-bill"><img src="http://www.codetriage.com/gautamkrishnar/be-like-bill/badges/users.svg" alt="Code Triagers Badge"></a> <a href="https://github.com/gautamkrishnar/Be-Like-Bill/blob/master/LICENSE"><img src="https://img.shields.io/:license-gpl3-blue.svg?style=flat" alt="Licence"></a>
+</h1>
+
+<p>Be like Bill is an online platform that allows you to create your own "Be like Bill" Memes. Its really simple and easy to use. It also has an API to create and use Be like Bill memes on your website.</p>
+
+<p><img src="http://i.imgur.com/1cXQOFT.jpg" alt="Be like bill"></p>
+
+<p>Just go to: <a href="http://belikebill.azurewebsites.net/">http://belikebill.azurewebsites.net/</a> and create random meme with your name. If you want to use your own text, use the API.</p>
+
+<h4>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h4>
+
+<ul>
+<li>Create be like bill memes with your name</li>
+<li>Memes changes with user's sex</li>
+<li>Easy to use API for using your own customized version of Be like Bill meme on your website</li>
+</ul>
+
+<h3>
+<a id="be-like-bill-api-guide" class="anchor" href="#be-like-bill-api-guide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Be Like Bill API Guide</h3>
+
+<p>Be like bill API allows you to use your own customized version of Be like Bill memes on your website. For using Be like Bill API, you just need to call the API script by providing suitable arguments via POST. </p>
+
+<p>The API script is located at:  <a href="http://belikebill.azurewebsites.net/billgen-API.php">http://belikebill.azurewebsites.net/billgen-API.php</a></p>
+
+<p>If you need to include a random meme to your website just use:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://belikebill.azurewebsites.net/billgen-API.php?default=1<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<p>If you need to include a random meme with your name to your website just use:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://belikebill.azurewebsites.net/billgen-API.php?default=1<span class="pl-ii">&amp;</span>name=yourname<span class="pl-pds">"</span></span> /&gt; </pre></div>
+
+<p>If you need to use your own Be like Bill meme with your oen customized text just use the following:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://belikebill.azurewebsites.net/billgen-API.php?text=This is Bill%0D%0ABe Like Bill<span class="pl-pds">"</span></span> /&gt;
+</pre></div>
+
+<p>You must use <code>%0D%0A</code> for newine.</p>
+
+<h5>
+<a id="list-of-options" class="anchor" href="#list-of-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List of options</h5>
+
+<ul>
+<li>
+<strong>default</strong> - Set this to 1 if you need to use the predefined memes</li>
+<li>
+<strong>name</strong>    - Set this to your name if you need to use your name on a predefined meme. Works only if default is set to 1 </li>
+<li>
+<strong>text</strong>    - Use your own text in the meme.</li>
+</ul>
+
+<h3>
+<a id="bugs" class="anchor" href="#bugs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bugs</h3>
+
+<p>If you are experiencing any bugs feel free to open  a new issue <a href="https://github.com/gautamkrishnar/Be-Like-Bill/issues/new">here</a> </p>
+
+<h3>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h3>
+
+<p>Feel free to make any changes. We need some more memes to make Be like Bill a lot more awesome. Edit the <strong>memelist.php</strong> to add more memes. Submit a new pull request with your changes.</p>
+
+<h6>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TODO</h6>
+
+<ul>
+<li>[ ] Ability to use more characters other than Bill, like Della</li>
+<li>[ ] Add more memes</li>
+</ul>
+
+<h3>
+<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributors</h3>
+
+<ul>
+<li>
+<a href="https://github.com/BhawaniGarg">Bhawani Garg</a> : Bug:<a href="https://github.com/gautamkrishnar/Be-Like-Bill/issues/2">#2</a> PR:<a href="https://github.com/gautamkrishnar/Be-Like-Bill/pull/3">#3</a>
+</li>
+</ul>
+
+<h3>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h3>
+
+<p>Download the latest source code:</p>
+
+<p><a href="https://github.com/gautamkrishnar/Be-Like-Bill/releases/latest">
+ <img src="http://scubarkada.com/tpl/design1/download-button-blue-300x133.png" height="50px" width="inherit"></a></p>
+
+<h3>
+<a id="spread-the-word" class="anchor" href="#spread-the-word" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Spread the word</h3>
+
+<p>If you liked this project, please dont forget to star this repo and spread the word.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Be-like-bill maintained by <a href="https://github.com/gautamkrishnar">gautamkrishnar</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
