@@ -3,7 +3,7 @@
         <title>Be like Bill</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="icon.png" 
+        <link rel="shortcut icon" href="icon.png">
         <meta name="description" content="Be like Bill is an online platform that allows you to create your own "Be like Bill" memes. Its really simple and easy to use. It also has an API to create and use Be like Bill memes on your website.">
         <meta name="keywords" content="be like bill,meme generator,be like bill api,gautam krishna r">
         <meta name="author" content="Gautam krishna R">
