@@ -6,9 +6,10 @@ Be like Bill is an online platform that allows you to create your own "Be like B
 Just go to: http://belikebill.azurewebsites.net/ and create random meme with your name. If you want to use your own text, use the API.
 
 #### Features
-* Create be like bill memes with your name
+* Create be like Bill memes with your name
 * Memes changes with user's sex
 * Easy to use API for using your own customized version of Be like Bill meme on your website
+* Generate Bill memes and save them to your website. The generated memes will be deleted automaticially after a specified time
 
 ### Be Like Bill API Guide
 Be like bill API allows you to use your own customized version of Be like Bill memes on your website. For using Be like Bill API, you just need to call the API script by providing suitable arguments via POST. 
