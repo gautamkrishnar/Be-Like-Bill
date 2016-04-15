@@ -45,6 +45,7 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
 }
  else if(filter_input(INPUT_GET, 'text')) {
     $text=filter_input(INPUT_GET, 'text');
+    $text=wordwrap($text,40,"\n",true);
 }
       
       $img = imagecreatefromjpeg('bill-ovl.jpg');
