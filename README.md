@@ -58,6 +58,11 @@ Feel free to make any changes. We need some more memes to make Be like Bill a lo
 * [Bhawani Garg](https://github.com/BhawaniGarg) : Bug:[#2](https://github.com/gautamkrishnar/Be-Like-Bill/issues/2) PR:[#3](https://github.com/gautamkrishnar/Be-Like-Bill/pull/3)
 * [Ankit Jain](https://github.com/ankitjain28may) : PR:[#5](https://github.com/gautamkrishnar/Be-Like-Bill/pull/5)
 
+### Projects
+These are some of the awesome projects that use Be-Like-Bill API:
+* [Be Like Willi](http://samkrieg.ch/willi/) by Sam Krieg
+* [Be Like Bill Twitter Bot](https://github.com/CamTosh/Be-like-bill-bot) by [Tosh Camille](https://github.com/CamTosh)
+
 ### Download
 Download the latest source code:
 
