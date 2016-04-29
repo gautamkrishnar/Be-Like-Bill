@@ -1,4 +1,4 @@
-# Be Like Bill [![Build Status](https://travis-ci.org/gautamkrishnar/Be-Like-Bill.svg?branch=master)](https://travis-ci.org/gautamkrishnar/Be-Like-Bill) [![Code Triagers Badge](http://www.codetriage.com/gautamkrishnar/be-like-bill/badges/users.svg)](http://www.codetriage.com/gautamkrishnar/be-like-bill) [![Licence](https://img.shields.io/:license-gpl3-blue.svg?style=flat)](https://github.com/gautamkrishnar/Be-Like-Bill/blob/master/LICENSE)  [![Code Climate](https://codeclimate.com/github/gautamkrishnar/Be-Like-Bill/badges/gpa.svg)](https://codeclimate.com/github/gautamkrishnar/Be-Like-Bill)
+# Be Like Bill [![Build Status](https://travis-ci.org/gautamkrishnar/Be-Like-Bill.svg?branch=master)](https://travis-ci.org/gautamkrishnar/Be-Like-Bill) [![Code Triagers Badge](http://www.codetriage.com/gautamkrishnar/be-like-bill/badges/users.svg)](http://www.codetriage.com/gautamkrishnar/be-like-bill) [![Licence](https://img.shields.io/:license-gpl3-blue.svg?style=flat)](https://github.com/gautamkrishnar/Be-Like-Bill/blob/master/LICENSE) 
 Be like Bill is an online platform that allows you to create your own "Be like Bill" Memes. Its really simple and easy to use. It also has an API to create and use Be like Bill memes on your website.
 
 ![Be like bill](http://i.imgur.com/1cXQOFT.jpg)
@@ -63,6 +63,10 @@ These are some of the awesome projects that use Be-Like-Bill API:
 * [Be Like Willi](http://samkrieg.ch/willi/) by Sam Krieg
 * [Be Like Bill Twitter Bot](https://github.com/CamTosh/Be-like-bill-bot) by [Tosh Camille](https://github.com/CamTosh)
 * [Add your Project Here](mailto:r.gautamkrishna@gmail.com)
+
+### Mentions
+* Special thanks to programmableweb for including Be-Like-Bill meme on their [blog post](http://www.programmableweb.com/news/daily-api-roundup-google-consumer-surveys-be-bill-vendasta-mediamath-reckon-one/brief/2016/04/27). Be-like-bill API is now listed on [programmableweb API database](http://www.programmableweb.com/api/be-bill).
+* [www.phptrends.com](http://phptrends.com/dig_in/bill-api)
 
 ### Download
 Download the latest source code:
