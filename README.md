@@ -56,8 +56,14 @@ Feel free to make any changes. We need some more memes to make Be like Bill a lo
 - [ ] Add more memes
 
 ### Contributors
-* [Bhawani Garg](https://github.com/BhawaniGarg) : Bug:[#2](https://github.com/gautamkrishnar/Be-Like-Bill/issues/2) PR:[#3](https://github.com/gautamkrishnar/Be-Like-Bill/pull/3)
-* [Ankit Jain](https://github.com/ankitjain28may) : PR:[#5](https://github.com/gautamkrishnar/Be-Like-Bill/pull/5)
+Special thanks to these awesome superheroes:
+
+| Name | Bug/PR |
+|--------|--------|
+| [Bhawani Garg](https://github.com/BhawaniGarg) | Bug:[#2](https://github.com/gautamkrishnar/Be-Like-Bill/issues/2) PR:[#3](https://github.com/gautamkrishnar/Be-Like-Bill/pull/3) |
+| [Ankit Jain](https://github.com/ankitjain28may) | PR:[#5](https://github.com/gautamkrishnar/Be-Like-Bill/pull/5) |
+| [Rigin Oommen](https://github.com/riginoommen) | Bug:[#6](https://github.com/gautamkrishnar/Be-Like-Bill/issues/6) |
+| [Kiong](https://github.com/tlkiong) | PR:[#7](https://github.com/gautamkrishnar/Be-Like-Bill/pull/7) |
 
 ### Projects
 These are some of the awesome projects that use Be-Like-Bill API:
