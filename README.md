@@ -26,7 +26,7 @@ If you need to include a random meme with your name to your website just use:
 
 
 ```html
-<img src="http://belikebill.azurewebsites.net/billgen-API.php?default=1&name=yourname" /> 
+<img src="http://belikebill.azurewebsites.net/billgen-API.php?default=1&name=yourname&sex=f" /> 
 ```
 
 If you need to use your own Be like Bill meme with your oen customized text just use the following:
@@ -43,6 +43,7 @@ You must use `%0D%0A` for newine.
 * **default** - Set this to 1 if you need to use the predefined memes
 * **name**    - Set this to your name if you need to use your name on a predefined meme. Works only if default is set to 1 
 * **text**    - Use your own text in the meme.
+* **sex**     - To set the gender of the character. Values are 'f' or 'm'. The default is 'm'
 
 ### Bugs
 If you are experiencing any bugs feel free to open  a new issue [here](https://github.com/gautamkrishnar/Be-Like-Bill/issues/new) 
