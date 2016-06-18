@@ -11,14 +11,18 @@ $text="Use:\nbillgen-API.php?default=1 :- To generate meme from \ndefault text.\
         . "billgen-API.php?text=your text here :- Generate meme \nusing"
         . " your own text. use '%0D%0A' for newline. \n"
         . "eg:billgen-API.php?text=Bill is smart%0D%0ABe like Bill";
-$def = filter_input(INPUT_GET, 'default');
+if ( filter_input(INPUT_POST, 'default')){ $def = filter_input(INPUT_POST, 'default');}
+ else { $def = filter_input(INPUT_GET, 'default');}
+ 
 if($def==1)
 {
-$name = filter_input(INPUT_GET, 'name');
-$sex = filter_input(INPUT_GET, 'sex');
+if ( filter_input(INPUT_POST, 'name')){$name = filter_input(INPUT_POST, 'name');}
+else { $name = filter_input(INPUT_GET, 'name');}
+if ( filter_input(INPUT_POST, 'sex')){$name = filter_input(INPUT_POST, 'sex');}
+else { $sex = filter_input(INPUT_GET, 'sex');}
 
 // Including result array from memelist.php file
-include 'memelist.php';
+require_once 'memelist.php';
 
 // Randomizing results
 $ran_mem=array_rand($memlist,1);
@@ -45,6 +49,10 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
 }
  else if(filter_input(INPUT_GET, 'text')) {
     $text=filter_input(INPUT_GET, 'text');
+    $text=wordwrap($text,40,"\n",true);
+}
+else if(filter_input(INPUT_POST, 'text')) {
+    $text=filter_input(INPUT_POST, 'text');
     $text=wordwrap($text,40,"\n",true);
 }
       
