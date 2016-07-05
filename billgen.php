@@ -89,5 +89,6 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
 	  imagejpeg($img,$path);
 	  $siteurl="http://".$_SERVER['SERVER_NAME']."/"; //Website url
       $path=$siteurl.$path;
+	  $path=str_replace('/./','/',$path);
 	 }
 ?> 
