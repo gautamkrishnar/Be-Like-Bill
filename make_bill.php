@@ -87,9 +87,9 @@
 				  // callback
 				  function(response) {
 					if (response && !response.error_message) {
-					  console.log('Posting completed.');
+					  alert("Thanks for sharing...");
 					} else {
-					  console.log('Error while posting.');
+					  alert("Error, Can't share the Bill...");
 					}
 				  }
 				);
