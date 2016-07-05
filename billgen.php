@@ -87,7 +87,7 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       // To replace space in name
 	  $path	= str_replace(' ', '_', $path);
 	  imagejpeg($img,$path);
-	  $siteurl="http://".$_SERVER['SERVER_NAME']."/Be-Like-Bill/"; //Website url
+	  $siteurl="http://".$_SERVER['SERVER_NAME']."/"; //Website url
       $path=$siteurl.$path;
 	 }
 ?> 
