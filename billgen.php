@@ -73,6 +73,7 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       $img = imagecreatefromjpeg('bill-ovl.jpg');
       $clr = imagecolorallocate($img, 0, 0, 0);
       $font_path = 'arialbd.ttf';
+	  $text = wordwrap($text,40,"\n",true);
       imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
       $filename = ".jpg";
 	  if(isset($billpath))
