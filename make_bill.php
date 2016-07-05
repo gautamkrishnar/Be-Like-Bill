@@ -56,6 +56,7 @@
         }
 		
  else {
+	 $name="Bill";
      echo '<img src="';
      genbill();
 	 echo $path;
