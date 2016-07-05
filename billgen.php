@@ -1,4 +1,11 @@
 <?php
+function genbill(){
+	global $path;
+	global $name;
+	global $sex;
+	global $ran_mem;
+	global $path;
+	global $siteurl;
 /*
  * Created with <3 By Gautam Krishna R
  * www.github.com/gautamkrishnar
@@ -29,7 +36,14 @@
 // Including result array from memelist.php file
 include 'memelist.php';
 // Randomizing results
-$ran_mem=array_rand($memlist,1);
+if(filter_input(INPUT_GET, 'rand'))
+{
+	$ran_mem=filter_input(INPUT_GET, 'rand');
+}
+else
+{
+	$ran_mem=array_rand($memlist,1);
+}
 $text = $memlist[$ran_mem];
 
 // if user inputs his name
@@ -38,6 +52,9 @@ if(isset($name))
 $name=ucfirst($name);
 $text = preg_replace('/\bBill\b/', $name, $text);
 $text = preg_replace('/\bbill\b/', $name, $text);
+}
+else{
+	$billpath = rand(1,100000);
 }
 //Just fot preventing a notice when $sesx is not found when the billgen.php is called via browser for debugging purposes
 if (!isset($sex)){$sex='m';}
@@ -57,9 +74,20 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       $clr = imagecolorallocate($img, 0, 0, 0);
       $font_path = 'arialbd.ttf';
       imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
-      $billpath = rand(1,100000);
       $filename = ".jpg";
-      $path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
-      imagejpeg($img,$path);
-      echo $path;
+	  if(isset($billpath))
+		{
+			$path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
+		}
+	  else
+	  {
+		$path = "./tmpbill/BeLikeBill_" . $name . $filename;  
+	  }
+
+      // To replace space in name
+	  $path	= str_replace(' ', '_', $path);
+	  imagejpeg($img,$path);
+	  $siteurl="http://".$_SERVER['SERVER_NAME']."/Be-Like-Bill/"; //Website url
+      $path=$siteurl.$path;
+	 }
 ?> 
