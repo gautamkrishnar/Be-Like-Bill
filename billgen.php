@@ -47,13 +47,14 @@ else
 $text = $memlist[$ran_mem];
 
 // if user inputs his name
-if(isset($name))
+if(filter_input(INPUT_POST, 'name'))
 {
 $name=ucfirst($name);
 $text = preg_replace('/\bBill\b/', $name, $text);
 $text = preg_replace('/\bbill\b/', $name, $text);
 }
 else{
+	$name="Bill";
 	$billpath = rand(1,100000);
 }
 //Just fot preventing a notice when $sesx is not found when the billgen.php is called via browser for debugging purposes
@@ -92,4 +93,7 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       $path=$siteurl.$path;
 	  $path=str_replace('/./','/',$path);
 	 }
-?> 
+
+
+	 
+	 ?>

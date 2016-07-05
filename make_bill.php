@@ -56,12 +56,11 @@
         }
 		
  else {
-	 $name="Bill";
      echo '<img src="';
      genbill();
 	 echo $path;
      echo '" class="billimg"/>';
- }
+	}
          ?>
 		<br/><br/><br/>
         <?php
