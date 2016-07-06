@@ -47,7 +47,19 @@ else
 $text = $memlist[$ran_mem];
 
 // if user inputs his name
-if(filter_input(INPUT_POST, 'name'))
+ if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $name = filter_input(INPUT_POST, 'name');
+		if($name=="")
+		{
+			$name="Bill";
+		}
+        $sex = filter_input(INPUT_POST, 'sex');
+        }
+else if($_SERVER['REQUEST_METHOD'] === 'GET'){
+        $name = filter_input(INPUT_GET, 'name');
+        $sex = filter_input(INPUT_GET, 'sex');
+        }
+if(isset($name))
 {
 $name=ucfirst($name);
 $text = preg_replace('/\bBill\b/', $name, $text);
@@ -55,7 +67,6 @@ $text = preg_replace('/\bbill\b/', $name, $text);
 }
 else{
 	$name="Bill";
-	$billpath = rand(1,100000);
 }
 //Just fot preventing a notice when $sesx is not found when the billgen.php is called via browser for debugging purposes
 if (!isset($sex)){$sex='m';}
@@ -77,8 +88,9 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
 	  $text = wordwrap($text,40,"\n",true);
       imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
       $filename = ".jpg";
-	  if(isset($billpath))
-		{
+	  if($name=="Bill")
+		{			
+			$billpath = rand(1,100000);
 			$path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
 		}
 	  else
@@ -89,7 +101,7 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       // To replace space in name
 	  $path	= str_replace(' ', '_', $path);
 	  imagejpeg($img,$path);
-	  $siteurl="http://".$_SERVER['SERVER_NAME']."/"; //Website url
+	  $siteurl="http://".$_SERVER['SERVER_NAME']."/Be-Like-Bill/"; //Website url
       $path=$siteurl.$path;
 	  $path=str_replace('/./','/',$path);
 	 }

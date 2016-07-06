@@ -30,8 +30,6 @@
         <?php
         require_once('billgen.php');
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-        $name = filter_input(INPUT_POST, 'name');
-        $sex = filter_input(INPUT_POST, 'sex');
         // Echoing the image url to src tag of img
         echo '<img src="';
 		genbill();
@@ -41,9 +39,6 @@
 		echo '<a class="btn" onclick="share_prompt()">Share on Facebook</a>';
         }
 		else if($_SERVER['REQUEST_METHOD'] === 'GET'){
-        $name = filter_input(INPUT_GET, 'name');
-        $sex = filter_input(INPUT_GET, 'sex');
-        // Echoing the image url to src tag of img
         echo '<img src="';
 		if (isset($_GET['name']))
 		{
