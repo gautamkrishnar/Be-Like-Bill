@@ -45,7 +45,7 @@ else
 	$ran_mem=array_rand($memlist,1);
 }
 $text = $memlist[$ran_mem];
-
+$billpath = rand(1,100000);
 // if user inputs his name
  if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $name = filter_input(INPUT_POST, 'name');
@@ -90,12 +90,11 @@ $text = preg_replace('/\bhimself\b/', 'herself', $text);
       $filename = ".jpg";
 	  if($name=="Bill")
 		{			
-			$billpath = rand(1,100000);
 			$path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
 		}
 	  else
 	  {
-		$path = "./tmpbill/BeLikeBill_" . $name . $filename;  
+		$path = "./tmpbill/BeLikeBill_" . $name . $billpath . $filename;
 	  }
 
       // To replace space in name
