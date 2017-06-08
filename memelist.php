@@ -1,9 +1,14 @@
 <?php 
 $memlist=array("This is Bill.\n\n"
-    . "Bill has an I-pad to take photos\n"
-    . "He knows the the camera's crap\nand he doesn't want to look like a\n"
-    . "complete knob\n\n"
-    . "Be smart.\n"
+    . "Doesn't mind if you like pineapple on pizza or not.\n"
+    . "He knows that different people like different things.\n"
+    . "Bill is smart.\n"
+    . "Be like Bill.",
+    "This is Bill.\n\n"
+    . "Bill has an iPad to take photos with.\n"
+    . "He knows that the camera's crap\nand he doesn't want to look like a\n"
+    . "complete knob.\n\n"
+    . "Bill is smart.\n"
     . "Be like Bill.",
     "This is Bill.\n\n"
     . "Bill is on the internet,\n"
