@@ -44,8 +44,10 @@ $text = preg_replace('/\bHis\b/', 'Her', $text);
 $text = preg_replace('/\bhe\b/', 'she', $text);
 $text = preg_replace('/\bHe\b/', 'She', $text);
 $text = preg_replace('/\bhimself\b/', 'herself', $text);
-
+$img = imagecreatefromjpeg('bill-ovl-f.jpg');
 }
+else
+	$img = imagecreatefromjpeg('bill-ovl.jpg');
 }
  else if(filter_input(INPUT_GET, 'text')) {
     $text=filter_input(INPUT_GET, 'text');
@@ -55,8 +57,7 @@ else if(filter_input(INPUT_POST, 'text')) {
     $text=filter_input(INPUT_POST, 'text');
     $text=wordwrap($text,40,"\n",true);
 }
-      
-      $img = imagecreatefromjpeg('bill-ovl.jpg');
+
       $clr = imagecolorallocate($img, 0, 0, 0);
       $font_path = 'arialbd.ttf';
       imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
