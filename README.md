@@ -52,7 +52,7 @@ If you are experiencing any bugs feel free to open  a new issue [here](https://g
 Feel free to make any changes. We need some more memes to make Be like Bill a lot more awesome. Edit the **memelist.php** to add more memes. Submit a new pull request with your changes.
 
 ###### TODO
-- [ ] Ability to use more characters other than Bill, like Della
+- [x] Ability to use more characters other than Bill, like Della
 - [ ] Add more memes
 
 ### Contributors
