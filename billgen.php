@@ -80,7 +80,7 @@ $text = preg_replace('/\bHis\b/', 'Her', $text);
 $text = preg_replace('/\bhe\b/', 'she', $text);
 $text = preg_replace('/\bHe\b/', 'She', $text);
 $text = preg_replace('/\bhimself\b/', 'herself', $text);
-
+$img = imagecreatefromjpeg('bill-ovl-f.jpg');
 }
       $img = imagecreatefromjpeg('bill-ovl.jpg');
       $clr = imagecolorallocate($img, 0, 0, 0);
