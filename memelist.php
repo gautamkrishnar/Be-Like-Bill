@@ -54,7 +54,7 @@ $memlist=array("This is Bill.\n\n"
     . "Bill and Della are happy.\n"
     . "Be like Bill and Della.",
     "This is Bill.\n\n"
-    . "Bill isn't an online dating creep/\n"
+    . "Bill isn't an online dating creep\n"
     . "Bill likes the romantic way.\n"
     . "\n\nBill is gentleman.\n"
     . "Be like Bill.",
