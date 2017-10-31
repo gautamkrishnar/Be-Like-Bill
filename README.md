@@ -64,6 +64,9 @@ Special thanks to these awesome superheroes:
 | [Ankit Jain](https://github.com/ankitjain28may) | PR:[#5](https://github.com/gautamkrishnar/Be-Like-Bill/pull/5) |
 | [Rigin Oommen](https://github.com/riginoommen) | Bug:[#6](https://github.com/gautamkrishnar/Be-Like-Bill/issues/6) |
 | [Kiong](https://github.com/tlkiong) | PR:[#7](https://github.com/gautamkrishnar/Be-Like-Bill/pull/7) |
+| [Mikael Stenman](https://github.com/m1ksu) | PR:[#10](https://github.com/gautamkrishnar/Be-Like-Bill/pull/10) [#11](https://github.com/gautamkrishnar/Be-Like-Bill/pull/11) |
+| [alien](https://github.com/sadboyzvone) | PR:[#12](https://github.com/gautamkrishnar/Be-Like-Bill/pull/12) |
+| [Jophab](https://github.com/jophab) | PR:[#13](https://github.com/gautamkrishnar/Be-Like-Bill/pull/13) [#14](https://github.com/gautamkrishnar/Be-Like-Bill/pull/14) |
 
 ### Projects
 These are some of the awesome projects that use Be-Like-Bill API:
