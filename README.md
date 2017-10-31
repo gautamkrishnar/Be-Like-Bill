@@ -80,7 +80,7 @@ These are some of the awesome projects that use Be-Like-Bill API:
 Download the latest source code:
 
  <a href="https://github.com/gautamkrishnar/Be-Like-Bill/releases/latest">
- <img src="http://scubarkada.com/tpl/design1/download-button-blue-300x133.png" height="50px" width="inherit" /></a>
+ <img src="https://media.giphy.com/media/dpnBD3KRM9WsU/200.gif" height="50px" width="inherit" /></a>
 
 ### Spread the word
 If you liked this project, please dont forget to star this repo and spread the word.
