@@ -67,6 +67,7 @@ Special thanks to these awesome superheroes:
 | [Mikael Stenman](https://github.com/m1ksu) | PR:[#10](https://github.com/gautamkrishnar/Be-Like-Bill/pull/10) [#11](https://github.com/gautamkrishnar/Be-Like-Bill/pull/11) |
 | [alien](https://github.com/sadboyzvone) | PR:[#12](https://github.com/gautamkrishnar/Be-Like-Bill/pull/12) |
 | [Jophab](https://github.com/jophab) | PR:[#13](https://github.com/gautamkrishnar/Be-Like-Bill/pull/13) [#14](https://github.com/gautamkrishnar/Be-Like-Bill/pull/14) |
+| [Esdert Folkers](https://github.com/Edsardio) | PR:[#18](https://github.com/gautamkrishnar/Be-Like-Bill/pull/18) |
 
 ### Projects
 These are some of the awesome projects that use Be-Like-Bill API:
@@ -76,7 +77,6 @@ These are some of the awesome projects that use Be-Like-Bill API:
 
 ### Mentions
 * Special thanks to programmableweb for including Be-Like-Bill meme on their [blog post](http://www.programmableweb.com/news/daily-api-roundup-google-consumer-surveys-be-bill-vendasta-mediamath-reckon-one/brief/2016/04/27). Be-like-bill API is now listed on [programmableweb API database](http://www.programmableweb.com/api/be-bill).
-* [www.phptrends.com](http://phptrends.com/dig_in/bill-api)
 * [3456.com.ar](https://3456.com.ar//Be_Like_Bill_%28se_como_Bill%29.html)
 
 ### Download
