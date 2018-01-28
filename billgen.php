@@ -102,7 +102,7 @@ else{
 	  $path	= str_replace(' ', '_', $path);
 	  imagejpeg($img,$path);
 	  $siteurl="http://".$_SERVER['SERVER_NAME']."/Be-Like-Bill/"; //Website url
-      $path=$siteurl.$path;
+//       $path=$siteurl.$path;
 	  $path=str_replace('/./','/',$path);
 	 }
 
