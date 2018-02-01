@@ -14,6 +14,9 @@ $text="Use:\nbillgen-API.php?default=1 :- To generate meme from \ndefault text.\
 if ( filter_input(INPUT_POST, 'default')){ $def = filter_input(INPUT_POST, 'default');}
  else { $def = filter_input(INPUT_GET, 'default');}
  
+ // Default image for Bill
+$img = imagecreatefromjpeg('bill-ovl.jpg');
+ 
 if($def==1)
 {
 if ( filter_input(INPUT_POST, 'name')){$name = filter_input(INPUT_POST, 'name');}
@@ -46,8 +49,6 @@ $text = preg_replace('/\bHe\b/', 'She', $text);
 $text = preg_replace('/\bhimself\b/', 'herself', $text);
 $img = imagecreatefromjpeg('bill-ovl-f.jpg');
 }
-else
-	$img = imagecreatefromjpeg('bill-ovl.jpg');
 }
  else if(filter_input(INPUT_GET, 'text')) {
     $text=filter_input(INPUT_GET, 'text');
