@@ -86,4 +86,4 @@ Download the latest source code:
  <img src="https://media.giphy.com/media/dpnBD3KRM9WsU/200.gif" height="50px" width="inherit" /></a>
 
 ### Spread the word
-If you liked this project, please dont forget to star this repo and spread the word.
+If you like this project, please don't forget to star this repo and spread the word.
