@@ -29,7 +29,7 @@
             </form>
             <br/>
         Created with <img src="http://www.clker.com/cliparts/V/a/r/B/D/o/love-md.png" width="15px" height="inherit"/> 
-        By <a href="http://github.com/gautamkrishnar/" target="_blank">Gautam krishna R.</a><br/>
+        By <b><a href="http://github.com/gautamkrishnar/" target="_blank">Gautam krishna R.</a> </b> <br/>
         API documentation and source code is available <a href="https://github.com/gautamkrishnar/Be-Like-Bill" target="_blank"> here. </a>
         </div>
         
