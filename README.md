@@ -3,7 +3,7 @@ Be like Bill is an online platform that allows you to create your own "Be like B
 
 ![Be like bill](http://i.imgur.com/1cXQOFT.jpg)
 
-Just go to: http://belikebill.azurewebsites.net/ and create random meme with your name. If you want to use your own text, use the API.
+Just go to: https://www.belikebill.ga/ and create random meme with your name. If you want to use your own text, use the API.
 
 #### Features
 * Create be like Bill memes with your name
@@ -14,25 +14,25 @@ Just go to: http://belikebill.azurewebsites.net/ and create random meme with you
 ### Be Like Bill API Guide
 Be like bill API allows you to use your own customized version of Be like Bill memes on your website. For using Be like Bill API, you just need to call the API script by providing suitable arguments via POST. 
 
-The API script is located at:  http://belikebill.azurewebsites.net/billgen-API.php
+The API script is located at:  https://belikebill.ga/billgen-API.php
 
 If you need to include a random meme to your website just use:
 
 ```html
-<img src="http://belikebill.azurewebsites.net/billgen-API.php?default=1" />
+<img src="https://belikebill.ga/billgen-API.php?default=1" />
 ```
 
 If you need to include a random meme with your name to your website just use:
 
 
 ```html
-<img src="http://belikebill.azurewebsites.net/billgen-API.php?default=1&name=yourname&sex=f" /> 
+<img src="https://belikebill.ga/billgen-API.php?default=1&name=yourname&sex=f" /> 
 ```
 
 If you need to use your own Be like Bill meme with your own customized text just use the following:
 
 ```html
-<img src="http://belikebill.azurewebsites.net/billgen-API.php?text=This is Bill%0D%0ABe Like Bill" />
+<img src="https://belikebill.ga/billgen-API.php?text=This is Bill%0D%0ABe Like Bill" />
 
 ```
 
