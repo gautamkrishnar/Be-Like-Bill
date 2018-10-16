@@ -7,13 +7,13 @@
         <meta name="description" content="Be like Bill is an online platform that allows you to create your own "Be like Bill" memes. Its really simple and easy to use. It also has an API to create and use Be like Bill memes on your website.">
         <meta name="keywords" content="be like bill,meme generator,be like bill api,gautam krishna r">
         <meta name="author" content="Gautam krishna R">
-        
+
         <link rel="stylesheet" type="text/css" href="style.css">
  <!--
   Created with <3 By Gautam Krishna R
   www.github.com/gautamkrishnar
  -->
- 
+
     </head>
     <body>
     <center>
@@ -28,11 +28,11 @@
             <input type="submit" class="btn" value="Be like Bill" />
             </form>
             <br/>
-        Created with <img src="http://www.clker.com/cliparts/V/a/r/B/D/o/love-md.png" width="15px" height="inherit"/> 
+        Created with <img src="https://www.clker.com/cliparts/V/a/r/B/D/o/love-md.png" width="15px" height="inherit"/>
         By <b><a href="http://github.com/gautamkrishnar/" target="_blank">Gautam krishna R.</a> </b> <br/>
         API documentation and source code is available <a href="https://github.com/gautamkrishnar/Be-Like-Bill" target="_blank"> here. </a>
         </div>
-        
+
     </center>
     </body>
 </html>

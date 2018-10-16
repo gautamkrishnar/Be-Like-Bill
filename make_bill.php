@@ -49,7 +49,7 @@
 		echo '<br/><br/>';
 		echo '<a class="btn" href="index.php">Create your own</a>';
         }
-		
+
  else {
      echo '<img src="';
      genbill();
@@ -63,7 +63,7 @@
         ?>
 		<br/>
         <br/><br/><b>
-        Created with <img src="http://www.clker.com/cliparts/V/a/r/B/D/o/love-md.png" width="15px" height="inherit"/> 
+        Created with <img src="https://www.clker.com/cliparts/V/a/r/B/D/o/love-md.png" width="15px" height="inherit"/>
         By <a href="http://github.com/gautamkrishnar/" target="_blank">Gautam krishna R.</a><br/>
         API documentation and source code is available <a href="https://github.com/gautamkrishnar/Be-Like-Bill" target="_blank"> here. </a></b>
     </center>
@@ -75,8 +75,8 @@
 					method: 'share',
 					href: '<?php echo $siteurl."/make_bill.php?name=".$name."&sex=".$sex."&rand=".$ran_mem; ?>',
 					title: 'Be Like <?php echo $name; ?>',
-					picture: '<?php echo $path; ?>',  
-					caption: '<?php echo $siteurl ?>',  
+					picture: '<?php echo $path; ?>',
+					caption: '<?php echo $siteurl ?>',
 					description: 'Check out the Be-Like-Bill Meme generator',
 				  },
 				  // callback
