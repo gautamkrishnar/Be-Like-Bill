@@ -73,9 +73,9 @@
 				FB.ui(
 				  {
 					method: 'share',
-					href: '<?php echo $siteurl."/make_bill.php?name=".$name."&sex=".$sex."&rand=".$ran_mem; ?>',
+					href: encodeURI('<?php echo $siteurl."/make_bill.php?name=".$name."&sex=".$sex."&rand=".$ran_mem; ?>'),
 					title: 'Be Like <?php echo $name; ?>',
-					picture: '<?php echo $path; ?>',
+					picture: '<?php echo $full_image_path; ?>',
 					caption: '<?php echo $siteurl ?>',
 					description: 'Check out the Be-Like-Bill Meme generator',
 				  },

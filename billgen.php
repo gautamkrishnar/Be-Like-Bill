@@ -6,6 +6,7 @@ function genbill(){
 	global $ran_mem;
 	global $path;
 	global $siteurl;
+	global $full_image_path;
 /*
  * Created with <3 By Gautam Krishna R
  * www.github.com/gautamkrishnar
@@ -28,11 +29,11 @@ function genbill(){
           }
           }
 
-          
+
 /*
  * Bill Generation module
  */
-          
+
 // Including result array from memelist.php file
 include 'memelist.php';
 // Randomizing results
@@ -89,23 +90,21 @@ else{
 	  $text = wordwrap($text,40,"\n",true);
       imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
       $filename = ".jpg";
+      $siteurl = "https://$_SERVER[HTTP_HOST]";
 	  if($name=="Bill")
-		{			
+		{
 			$path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
+			$full_image_path = $siteurl."/tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
 		}
 	  else
 	  {
 		$path = "./tmpbill/BeLikeBill_" . $name . $billpath . $filename;
+		$full_image_path = $siteurl."/tmpbill/BeLikeBill_" . $name . $billpath . $filename;
 	  }
 
       // To replace space in name
 	  $path	= str_replace(' ', '_', $path);
+	  $full_image_path = str_replace(' ', '_', $full_image_path);
 	  imagejpeg($img,$path);
-	  $siteurl="http://".$_SERVER['SERVER_NAME']."/Be-Like-Bill/"; //Website url
-//       $path=$siteurl.$path;
-	  $path=str_replace('/./','/',$path);
 	 }
-
-
-	 
 	 ?>
