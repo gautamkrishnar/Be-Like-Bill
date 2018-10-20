@@ -37,7 +37,7 @@ $memlist=array("This is Bill.\n\n"
     . "Be like Bill.",
     "This is Bill.\n\n"
     . "Bill smokes weed.\n"
-    . "Bill doesnt't forget good manners \n"
+    . "Bill doesn't forget good manners \n"
     . "and education.\n\n"
     . "Bill is smart.\n"
     . "Be like Bill.",
