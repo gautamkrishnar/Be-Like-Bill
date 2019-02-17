@@ -80,6 +80,9 @@ $text = preg_replace('/\bhis\b/', 'her', $text);
 $text = preg_replace('/\bHis\b/', 'Her', $text);
 $text = preg_replace('/\bhe\b/', 'she', $text);
 $text = preg_replace('/\bHe\b/', 'She', $text);
+$text = preg_replace('/\him\b/', 'her', $text);
+$text = preg_replace('/\bHim\b/', 'Her', $text);
+$text = preg_replace('/\bHimself\b/', 'Herself', $text);
 $text = preg_replace('/\bhimself\b/', 'herself', $text);
 $img = imagecreatefromjpeg('bill-ovl-f.jpg');
 }
