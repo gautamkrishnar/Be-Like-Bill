@@ -24,6 +24,10 @@
                  <option value="m">Male</option>
                  <option value="f">Female</option>
                 </select>
+                <select name="tdir" id="tdir" class="slt">
+                    <option value="rightToLeft">Right to Left</option>
+                    <option value="leftToRight">Left to Right</option>
+                </select>
             <br/><br/>
             <input type="submit" class="btn" value="Be like Bill" />
             </form>

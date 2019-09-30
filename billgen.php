@@ -20,14 +20,16 @@ function genbill(){
  */
 
 // $deltime is in seconds. 3600s=1hr
-      $deltime=3600;
+$deltime=3600;
 
-      $dir = "./tmpbill/";
-      foreach (glob($dir."*.jpg") as $billfile) {
-          if (filemtime($billfile) < time() - $deltime) {
-              unlink($billfile);
-          }
-          }
+$dir = "./tmpbill/";
+foreach (glob($dir."*.jpg") as $billfile) 
+{
+	if (filemtime($billfile) < time() - $deltime) 
+	{
+		unlink($billfile);
+	}
+}
 
 
 /*
@@ -48,25 +50,29 @@ else
 $text = $memlist[$ran_mem];
 $billpath = rand(1,100000);
 // if user inputs his name
- if($_SERVER['REQUEST_METHOD'] === 'POST'){
-        $name = filter_input(INPUT_POST, 'name');
-		if($name=="")
-		{
-			$name="Bill";
-		}
-        $sex = filter_input(INPUT_POST, 'sex');
-        }
-else if($_SERVER['REQUEST_METHOD'] === 'GET'){
-        $name = filter_input(INPUT_GET, 'name');
-        $sex = filter_input(INPUT_GET, 'sex');
-        }
+ if($_SERVER['REQUEST_METHOD'] === 'POST')
+ {
+	$name = filter_input(INPUT_POST, 'name');
+	if($name=="")
+	{
+		$name="Bill";
+	}
+	$sex = filter_input(INPUT_POST, 'sex');
+}
+else if($_SERVER['REQUEST_METHOD'] === 'GET')
+{
+	$name = filter_input(INPUT_GET, 'name');
+	$sex = filter_input(INPUT_GET, 'sex');
+}
+
 if(isset($name))
 {
-$name=ucfirst($name);
-$text = preg_replace('/\bBill\b/', $name, $text);
-$text = preg_replace('/\bbill\b/', $name, $text);
+	$name=ucfirst($name);
+	$text = preg_replace('/\bBill\b/', $name, $text);
+	$text = preg_replace('/\bbill\b/', $name, $text);
 }
-else{
+else
+{
 	$name="Bill";
 }
 //Just fot preventing a notice when $sesx is not found when the billgen.php is called via browser for debugging purposes
@@ -76,38 +82,49 @@ if (!isset($sex)){$sex='m';}
 // if bill is female} then changing the sentences by replacing the words
 if($sex=='f')
 {
-$text = preg_replace('/\bhis\b/', 'her', $text);
-$text = preg_replace('/\bHis\b/', 'Her', $text);
-$text = preg_replace('/\bhe\b/', 'she', $text);
-$text = preg_replace('/\bHe\b/', 'She', $text);
-$text = preg_replace('/\bhim\b/', 'her', $text);
-$text = preg_replace('/\bHim\b/', 'Her', $text);
-$text = preg_replace('/\bHimself\b/', 'Herself', $text);
-$text = preg_replace('/\bhimself\b/', 'herself', $text);
-$img = imagecreatefromjpeg('bill-ovl-f.jpg');
+	$text = preg_replace('/\bhis\b/', 'her', $text);
+	$text = preg_replace('/\bHis\b/', 'Her', $text);
+	$text = preg_replace('/\bhe\b/', 'she', $text);
+	$text = preg_replace('/\bHe\b/', 'She', $text);
+	$text = preg_replace('/\bhim\b/', 'her', $text);
+	$text = preg_replace('/\bHim\b/', 'Her', $text);
+	$text = preg_replace('/\bHimself\b/', 'Herself', $text);
+	$text = preg_replace('/\bhimself\b/', 'herself', $text);
+	$img = imagecreatefromjpeg('bill-ovl-f.jpg');
 }
-else{
-      $img = imagecreatefromjpeg('bill-ovl.jpg');}
-      $clr = imagecolorallocate($img, 0, 0, 0);
-      $font_path = 'arialbd.ttf';
-	  $text = wordwrap($text,40,"\n",true);
-      imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
-      $filename = ".jpg";
-      $siteurl = "https://$_SERVER[HTTP_HOST]";
-	  if($name=="Bill")
-		{
-			$path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
-			$full_image_path = $siteurl."/tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
-		}
-	  else
-	  {
+else
+{
+	$img = imagecreatefromjpeg('bill-ovl.jpg');
+}
+$clr = imagecolorallocate($img, 0, 0, 0);
+$font_path = 'arialbd.ttf';
+$text = wordwrap($text,40,"\n",true);
+imagettftext($img, 18, 0, 30, 100, $clr,$font_path, $text);
+$filename = ".jpg";
+$siteurl = "https://$_SERVER[HTTP_HOST]";
+if($name=="Bill")
+{
+	$path = "./tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
+	$full_image_path = $siteurl."/tmpbill/BeLikeBill_" . $billpath . "_" . $filename;
+}
+else
+{
+	if(preg_match('/([^\x00-\x7F])/',$name))
+	{
+		//Name is not ASCII and therefore will create a URL which can't be browsed to properly and will make a weird file name
+		$path = "./tmpbill/BeLikeBill_" . $billpath . $filename;
+		$full_image_path = $siteurl."/tmpbill/BeLikeBill_" . $billpath . $filename;
+	}
+	else
+	{
 		$path = "./tmpbill/BeLikeBill_" . $name . $billpath . $filename;
 		$full_image_path = $siteurl."/tmpbill/BeLikeBill_" . $name . $billpath . $filename;
-	  }
+	}
+}
 
-      // To replace space in name
-	  $path	= str_replace(' ', '_', $path);
-	  $full_image_path = str_replace(' ', '_', $full_image_path);
-	  imagejpeg($img,$path);
-	 }
-	 ?>
+// To replace space in name
+$path	= str_replace(' ', '_', $path);
+$full_image_path = str_replace(' ', '_', $full_image_path);
+imagejpeg($img,$path);
+}
+?>
