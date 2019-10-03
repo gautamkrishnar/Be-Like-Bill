@@ -73,7 +73,7 @@
 				FB.ui(
 				  {
 					method: 'share',
-					href: encodeURI('<?php echo $siteurl."/make_bill.php?name=".$name."&sex=".$sex."&rand=".$ran_mem; ?>'),
+					href: encodeURI('<?php echo $siteurl."/make_bill.php?name=".$name."&sex=".$sex."&tdir=".$tdir."&rand=".$ran_mem; ?>'),
 					title: 'Be Like <?php echo $name; ?>',
 					picture: '<?php echo $full_image_path; ?>',
 					caption: '<?php echo $siteurl ?>',

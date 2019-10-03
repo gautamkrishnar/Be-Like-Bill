@@ -6,7 +6,7 @@
  */
 header('Content-type: image/jpeg');
 $text="Use:\nbillgen-API.php?default=1 :- To generate meme from \ndefault text.\n\n"
-        . "billgen-API.php?default=1&name=anu&sex=f :- specifies \nthe name\n"
+        . "billgen-API.php?default=1&name=anu&sex=f&tdir=leftToRight :- specifies \nthe name\n"
         . "and sex. Generate the input based default memes.\n\n"
         . "billgen-API.php?text=your text here :- Generate meme \nusing"
         . " your own text. use '%0D%0A' for newline. \n"
@@ -21,8 +21,10 @@ if($def==1)
 {
 if ( filter_input(INPUT_POST, 'name')){$name = filter_input(INPUT_POST, 'name');}
 else { $name = filter_input(INPUT_GET, 'name');}
-if ( filter_input(INPUT_POST, 'sex')){$name = filter_input(INPUT_POST, 'sex');}
+if ( filter_input(INPUT_POST, 'sex')){$sex = filter_input(INPUT_POST, 'sex');}
 else { $sex = filter_input(INPUT_GET, 'sex');}
+if ( filter_input( INPUT_POST, 'tdir')) { $tdir = filter_input(INPUT_POST, "tdir"); }
+else { $tdir = filter_input(INPUT_GET, "tdir"); }
 
 // Including result array from memelist.php file
 require_once 'memelist.php';
