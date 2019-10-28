@@ -116,7 +116,7 @@ function genbill(){
 	$textBox->setFontColor(new Color(0,0,0));
 	switch($tdir)
 	{
-
+        require './lib.php';
 		case "rightToLeft":
 			imageflip($img,IMG_FLIP_HORIZONTAL);
 			$textBox->setBox(
