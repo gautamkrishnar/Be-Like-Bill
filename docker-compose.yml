@@ -1,0 +1,11 @@
+version: "3.1"
+services:
+  app:
+    build: .
+    ports:
+      - "80:80"
+    restart: always
+    networks:
+      - default
+networks:
+  default:
